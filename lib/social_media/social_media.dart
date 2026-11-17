@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'create_post_sheet.dart';
-import 'logout_button.dart';
 import 'post.dart';
 import 'post_card.dart';
 
@@ -52,7 +51,6 @@ class _SocialMediaPageState extends State<SocialMediaPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Social Media'),
-        actions: const [LogoutButton()],
       ),
       body: posts.isEmpty
           ? const Center(child: Text('No posts yet. Create one!'))
