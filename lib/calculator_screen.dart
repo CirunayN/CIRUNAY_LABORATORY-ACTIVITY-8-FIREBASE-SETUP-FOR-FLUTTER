@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'logout_button.dart';
+
 class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({super.key});
 
@@ -88,6 +90,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         centerTitle: true,
         backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
+        actions: const [LogoutButton()],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
